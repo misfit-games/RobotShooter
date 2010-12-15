@@ -1,0 +1,32 @@
+<project>
+	<name>Robot Shooter</name>
+	<settings>
+		<defaultWidth>320</defaultWidth>
+		<defaultHeight>240</defaultHeight>
+		<workingDirectory>../art</workingDirectory>
+	</settings>
+
+	<values>
+		<string name="roomName" maxChars="20" />
+		<string name="bgColor" maxChars="10" />
+	</values>
+	
+	<tilesets>
+		<tileset name="terrain" image="robotiles.png" tileHeight="16" tileWidth="16" />
+	</tilesets>
+	
+	<objects>
+		<object name="playerStart" image="basicrobot.png" height="16" width="16" limit="1" />
+		<object name="exit" image="exit.png" height="16" width="16">
+			<values>
+				<string name="destRoom" maxChars="20" />
+			</values>
+		</object>
+	</objects>
+	
+	<layers>
+		<tiles name="terrain" gridSize="16" exportTileIDs="true" />
+		<objects name="objects" gridSize="16" />
+	</layers>
+	
+</project>
