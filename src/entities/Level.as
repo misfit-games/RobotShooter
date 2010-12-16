@@ -4,7 +4,6 @@ package entities
 	// Map loader class, populate the level with terrain grid + objects
 	// from an (XML) OGMO Editor level
 	
-	
 	import flash.utils.ByteArray;
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.Tilemap;
@@ -16,6 +15,7 @@ package entities
 		public var terrainTiles:Tilemap = new Tilemap(Assets.SPR_TERRAIN, 320, 240, 16, 16);
 		public var terrainGrid:Grid = new Grid(320, 240, 16, 16, 0, 0);
 		public var exit:Exit;
+		public var spawn:BasicSpawn;
 		public var npc:NPC;
 
 		public function Level(xmlLevel:Class):void 
@@ -131,15 +131,15 @@ package entities
 			
 			// monster spawns ***************************************************************************
 			
-			/*dataList = xmlData.objects.badFairySpawn;
+			dataList = xmlData.objects.basicSpawn;
 			
 			for each (dataElement in dataList)
 			{
-				spawn = new BadFairySpawn;
+				spawn = new BasicSpawn;
 				(FP.world as GameWorld).add(spawn);
 				spawn.x = int(dataElement.@x);
 				spawn.y = int(dataElement.@y);
-			}*/
+			}
 			
 			// NPCs (to talk to etc.) *******************************************************************
 			

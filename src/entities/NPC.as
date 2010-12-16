@@ -10,7 +10,7 @@ package entities
 		
 		public function NPC() 
 		{
-			graphic = new Image(Assets.SPR_BYSTANDER);
+			graphic = new Image(Assets.SPR_HUMAN);
 			width = 8;
 			height = 16;
 			type = "npc";
