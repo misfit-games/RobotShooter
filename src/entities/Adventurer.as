@@ -15,7 +15,7 @@ package entities
 	public class Adventurer extends Entity
 	{
 		private var speed:Number = 110;
-		private var facing:String = "left";
+		public static var facing:String = "left";
 		
 		public function Adventurer():void 
 		{
@@ -128,6 +128,7 @@ package entities
 			}
 			
 			// add collisions with enemies/objects/doors/etc.
+			
 			
 			else return false;
 		}

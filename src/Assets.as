@@ -15,6 +15,7 @@ package
 		[Embed(source = "assets/art/basicrobot.png")] public static const SPR_ADVENTURER:Class;
 		[Embed(source = "assets/art/bystander816.png")] public static const SPR_HUMAN:Class;
 		[Embed(source = "assets/art/simplespawn.png")] public static const SPR_BASICSPAWN:Class;
+		[Embed(source = "assets/art/crate16.png")] public static const SPR_CRATE:Class;
 		
 		// the exit sprite is set visible=false by the Level.loadLevel function
 		

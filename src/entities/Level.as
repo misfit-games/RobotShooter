@@ -17,6 +17,7 @@ package entities
 		public var exit:Exit;
 		public var spawn:BasicSpawn;
 		public var npc:NPC;
+		public var crate:Crate;
 
 		public function Level(xmlLevel:Class):void 
 		{
@@ -139,6 +140,18 @@ package entities
 				(FP.world as GameWorld).add(spawn);
 				spawn.x = int(dataElement.@x);
 				spawn.y = int(dataElement.@y);
+			}
+			
+			// crates ***********************************************************************************
+			
+			dataList = xmlData.objects.crate;
+			
+			for each (dataElement in dataList)
+			{
+				crate = new Crate;
+				(FP.world as GameWorld).add(crate);
+				crate.x = int(dataElement.@x);
+				crate.y = int(dataElement.@y);
 			}
 			
 			// NPCs (to talk to etc.) *******************************************************************
