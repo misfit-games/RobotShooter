@@ -19,6 +19,9 @@
 		<object name="playerStart" image="basicrobot.png" height="16" width="16" limit="1" />
 		<object name="crate" image="crate16.png" height="16" width="16" />
 		<object name="basicSpawn" image="simplespawn.png" height="16" width="16" />
+		<object name="simpleMook" image="bystander816.png" height="16" width="16" />
+		<object name="gunMook" image="gunmook.png" height="16" width="16" />
+		<object name="batteryTerminal" image="battery.png" height="16" width="16" />
 		<object name="exit" image="exit.png" height="16" width="16">
 			<values>
 				<string name="destRoom" maxChars="20" />
