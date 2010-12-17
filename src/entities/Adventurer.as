@@ -14,9 +14,9 @@ package entities
 		
 	public class Adventurer extends Entity
 	{
-		private var speed:Number = 55;                // movement speed
-		private var shotCooldown:Number = 0;        // timer between shots
-		public static var facing:String = "left";
+		private var speed:Number = 40;                // movement speed
+		private var shotCooldown:Number = 0;          // timer between shots
+		public static var facing:String = "left";     // 
 		
 		public function Adventurer():void 
 		{
@@ -113,28 +113,15 @@ package entities
 			
 			if (collide("terraingrid", position.x, position.y))
 			{
-				// give wall collisions a bit of bounce
-				
-				switch (facing)
-				{
-					case "up":
-					y += Math.floor(y / 63);
-					break;
-					case "down":
-					y -= Math.ceil(y / 63);	
-					break;
-					case "left":
-					x += Math.floor(x / 63);
-					break;
-					case "right":
-					x -= Math.ceil(x / 63);
-					break;
-				}
-				
 				return true;
 			}
 			
-			// add collisions with enemies/objects/doors/etc.
+			if (collide("crate", position.x, position.y))
+			{
+				return false;
+			}
+			
+			// add collisions with enemies/bullets/battery/etc.
 			
 			
 			else return false;

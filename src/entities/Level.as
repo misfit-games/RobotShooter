@@ -12,8 +12,9 @@ package entities
 	public class Level extends Entity
 	{
 		
-		public var terrainTiles:Tilemap = new Tilemap(Assets.SPR_TERRAIN, 320, 240, 16, 16);
-		public var terrainGrid:Grid = new Grid(320, 240, 16, 16, 0, 0);
+		public var terrainTiles:Tilemap = 
+		new Tilemap(Assets.SPR_TERRAIN, 320, 240, Constants.TILE_SIZE, Constants.TILE_SIZE);
+		public var terrainGrid:Grid = new Grid(320, 240, Constants.TILE_SIZE, Constants.TILE_SIZE, 0, 0);
 		public var exit:Exit;
 		public var spawn:BasicSpawn;
 		public var npc:NPC;
