@@ -18,6 +18,8 @@ package entities.attacks
 			x = _x;
 			y = _y;
 			graphic = Image.createRect(16, 8, 0xFFA92A);  // rectangle for bullet
+			width = 16;
+			height = 8;
 			type = "bullet";
 			switch (facing) 
 			{

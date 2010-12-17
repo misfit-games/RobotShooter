@@ -29,7 +29,6 @@ package entities
 		
 		override public function update():void
 		{
-			// trace("shotCooldown");
 			
 			if (shotCooldown > 0)
 			{
