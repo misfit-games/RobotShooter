@@ -14,7 +14,8 @@ package entities
 		
 	public class Adventurer extends Entity
 	{
-		private var speed:Number = 110;
+		private var speed:Number = 55;                // movement speed
+		private var shotCooldown:Number = 0;        // timer between shots
 		public static var facing:String = "left";
 		
 		public function Adventurer():void 
@@ -28,6 +29,12 @@ package entities
 		
 		override public function update():void
 		{
+			// trace("shotCooldown");
+			
+			if (shotCooldown > 0)
+			{
+				shotCooldown--;
+			}
 			move();
 		}
 		
@@ -76,8 +83,9 @@ package entities
 				}
 			}
 			
-			if (Input.pressed(Key.Z))
+			if (Input.pressed(Key.Z) && (shotCooldown <= 0 ))
 			{
+				shotCooldown = 40;
 				shoot();
 			}
 		}

@@ -8,7 +8,7 @@ package entities.attacks
 		
 	public class PlayerBullet extends Entity
 	{
-		private var speed:Number = 1000;
+		private var speed:Number = 400;
 		private var xvel:Number = 0;
 		private var yvel:Number = 0;
 		

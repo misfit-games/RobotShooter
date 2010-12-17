@@ -5,7 +5,7 @@ package entities
 
 	public class FactoryWorker extends Entity
 	{
-		private var speed:Number = 40;
+		private var speed:Number = 20;
 		private var mySpeed:Number = speed * FP.elapsed;
 		
 		public function FactoryWorker() 
