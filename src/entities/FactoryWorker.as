@@ -24,6 +24,12 @@ package entities
 				destroy();
 			}
 			
+			if (collide("adventurer", this.x, this.y))
+			{
+				trace("***");
+				if (Math.random() < 0.1) { Globals.batteryCharge--; }
+			}
+			
 			mySpeed = speed * FP.elapsed;
 			
 			if (x < Globals.adventurer.x)

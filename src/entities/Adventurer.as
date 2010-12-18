@@ -86,6 +86,7 @@ package entities
 			if (Input.pressed(Key.Z) && (shotCooldown <= 0 ))
 			{
 				shotCooldown = 40;
+				Globals.batteryCharge--;
 				shoot();
 			}
 		}

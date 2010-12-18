@@ -10,7 +10,8 @@ package entities
 		
 		[Embed(source = "../assets/visitor1.ttf", embedAsCFF="false", fontFamily = "visitor1")] private static const myfont:Class;
 
-		private var t:Text;
+		private var score:Text;
+		private var battery:Text;
 		private var display:Graphiclist;
 
 		public function HUD():void
@@ -19,13 +20,22 @@ package entities
 			Text.size = 24;
 			layer = -100;
 			
-			t = new Text("chicken butt",20,20);
-			t.color = 0xFFFFFF;
-			display = new Graphiclist(t);
+		}
+		
+		override public function update():void 
+		{
+			score = new Text("chicken butt",10,10);
+			score.color = 0xFFFFFF;
+			display = new Graphiclist(score);
+			
+			battery = new Text(Globals.batteryCharge.toString(), 200, 10);
+			battery.color = 0xFFFFFF;
+			display.add(battery);
+			
+			
 			
 			graphic = display;
 		}
-		
 		
 	}
 

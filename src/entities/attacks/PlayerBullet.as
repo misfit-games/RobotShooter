@@ -8,7 +8,8 @@ package entities.attacks
 		
 	public class PlayerBullet extends Entity
 	{
-		private var speed:Number = 400;
+		private var speed:Number = 60;
+		private var mySpeed:Number = speed * FP.elapsed;
 		private var xvel:Number = 0;
 		private var yvel:Number = 0;
 		
@@ -17,27 +18,27 @@ package entities.attacks
 		{
 			x = _x;
 			y = _y;
-			graphic = Image.createRect(16, 8, 0xFFA92A);  // rectangle for bullet
+			graphic = Image.createRect(8, 8, 0xCC0000);  // rectangle for bullet
 			width = 16;
 			height = 8;
 			type = "bullet";
 			switch (facing) 
 			{
 				case "left":
-					xvel = -5;
+					xvel = -(mySpeed * 1.5);
 					yvel = 0;
 					break;
 				case "right":
-					xvel = 5;
+					xvel = mySpeed * 1.5;
 					yvel = 0;
 					break;
 				case "up":
 					xvel = 0;
-					yvel = -2;
+					yvel = -mySpeed;
 					break;
 				case "down":
 					xvel = 0;
-					yvel = 2;
+					yvel = mySpeed;
 				break;
 			}
 		}
