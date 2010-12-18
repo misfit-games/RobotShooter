@@ -26,7 +26,7 @@ package entities
 			Globals.level = new Level(Constants.locations[mapName]);
 			add(Globals.level);
 			
-			
+			add(new HUD());			
 			
 		//	checkSpecialRooms(mapName);
 		}

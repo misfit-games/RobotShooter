@@ -20,18 +20,14 @@ package
 		
 		// room to restart from after death
 		
-		public static var checkRoom:String = "courtyard";
+		public static var checkRoom:String = "level00";
 		
 		
 		// bits for score tracking purposes
 		
-		public static var numberOfDeaths:Number = 0;
-		public static var badFairyKills:Number = 0;
-		public static var badFairyNestKills:Number = 0;
-		
-		
-		// elf magic danger level tracking
-		public static var emThreatLevel:Number = 0;
+		public static var playerScore:Number = 0;
+		public static var levelNumber:Number = 0;
+		public static var batteryCharge:Number = 100;
 		
 		
 		

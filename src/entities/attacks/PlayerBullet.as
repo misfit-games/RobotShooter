@@ -47,6 +47,11 @@ package entities.attacks
 			x += xvel;
 			y += yvel;
 			
+			if (collide("enemy", this.x, this.y)) 
+			{ 
+				FP.world.remove(this); 
+			}
+			
 			// maybe destroy bullet if offscreen
 			
 		}

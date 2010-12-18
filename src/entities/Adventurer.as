@@ -16,7 +16,7 @@ package entities
 	{
 		private var speed:Number = 40;                // movement speed
 		private var shotCooldown:Number = 0;          // timer between shots
-		public static var facing:String = "left";     // 
+		public static var facing:String = "left";
 		
 		public function Adventurer():void 
 		{
@@ -26,6 +26,7 @@ package entities
 			type = "adventurer";
 			
 		}
+		
 		
 		override public function update():void
 		{
@@ -122,7 +123,6 @@ package entities
 			}
 			
 			// add collisions with enemies/bullets/battery/etc.
-			
 			
 			else return false;
 		}
