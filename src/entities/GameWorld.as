@@ -18,6 +18,8 @@ package entities
 		override public function begin():void
 		{
 			
+			FP.screen.color = 0x330000;
+			
 			// add
 			
 			Globals.adventurer = new Adventurer;

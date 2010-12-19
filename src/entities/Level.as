@@ -67,7 +67,7 @@ package entities
 
 			// set background color (defaults to 0x000000 if undefined in xml) *****************************
 			
-			FP.screen.color = xmlData.@bgColor;
+			// FP.screen.color = xmlData.@bgColor;
 			
 			
 			// convert "|" to newline to create a multiline TextPopup for room text ************************

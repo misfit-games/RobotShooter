@@ -24,11 +24,11 @@ package entities
 		
 		override public function update():void 
 		{
-			score = new Text("chicken butt",10,10);
+			score = new Text("score text",10,10);
 			score.color = 0xFFFFFF;
 			display = new Graphiclist(score);
 			
-			battery = new Text(Globals.batteryCharge.toString(), 200, 10);
+			battery = new Text(Globals.batteryCharge.toString(), 250, 10);
 			battery.color = 0xFFFFFF;
 			display.add(battery);
 			

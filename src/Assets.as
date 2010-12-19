@@ -14,6 +14,9 @@ package
 		
 		[Embed(source = "assets/art/basicrobot.png")] public static const SPR_ADVENTURER:Class;
 		[Embed(source = "assets/art/bystander816.png")] public static const SPR_HUMAN:Class;
+		[Embed(source = "assets/art/hum_worker.png")] public static const SPR_WORKER:Class;
+		[Embed(source = "assets/art/hum_guard.png")] public static const SPR_GUARD:Class;
+		[Embed(source = "assets/art/hum_swart.png")] public static const SPR_SWART:Class;
 		[Embed(source = "assets/art/simplespawn.png")] public static const SPR_BASICSPAWN:Class;
 		[Embed(source = "assets/art/crate16.png")] public static const SPR_CRATE:Class;
 		
